@@ -18,7 +18,6 @@
 body{
     font-family: 'Work Sans', sans-serif;
     max-width: 1200px;
-    border: 2px solid;
     margin: 0 auto;
 }
 /* header part style here */
@@ -83,21 +82,17 @@ nav a{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 24px;
     margin-right: 73px;
-    /* width: 40%; */
 }
 .left-align img{
     width: 182px;
 }
-
 .right-align{
-    /* width: 40%; */
     padding: 60px 0;
     padding-left: 0;
 }
 .title h4{
     margin-bottom: 24px;
 }
-
 .title h4 .span1{
     color: #727272;
     font-weight: 500;
@@ -132,19 +127,15 @@ nav a{
     padding-left: 20px;
     color: #131313;
     font-weight: 700;
-    font-size: 40px;
-    /* line-height: 53px; */
-    /* margin-left: 20px; */
+    font-size: 40px;    
 }
 .features-sub-title{
     color: #727272;
     line-height: 20px;
     margin: 20px 0;
 }
-
 article{
     padding: 30px;
-    /* margin-top: 15px; */
 }
 .article-title{
     color: #131313;
@@ -209,7 +200,85 @@ article{
         font-weight: 600;
         font-size: 20px;
     }
-
+    .sponsores{
+        margin: 70px 100px;
+    }
+    .sposores-title{
+        color: #131313;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 53px;
+        text-align: center;
+    }
+    .sposores-desc{
+        color: #727272;
+        line-height: 26px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .logo-container{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+     .logo-container div img{
+        width: 130px;
+        height: 35px;
+    }
+    .my-strength{
+        margin: 70px 100px;
+    }
+    .my-strength-title{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .my-strength-sub-title{
+        color: #727272;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .my-strength-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .my-strengths{
+        width: 30%;
+        background-color: #131313;
+        color: #FFF4E7;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .my-strengths img{
+        height: 40%;
+        width: 80%;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .my-strengths h5{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .my-strengths p{
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        padding: 0 10px;
+        text-align: justify;
+    }    
+    footer{
+        background: #FFF4E7;
+        border-radius: 8px;
+    }
+    footer p{
+        color: #424242;
+        font-size: 20px;
+        text-align: center;
+        padding: 40px 10px;
+    } 
 
 /* media queries starts */
 /* for mobile  */
@@ -220,7 +289,6 @@ article{
     }
     nav h3{
         margin-bottom: 25px;
-
     }
     nav ul{
         flex-direction: column;
@@ -229,13 +297,10 @@ article{
         margin-bottom: 25px;
         width: 100%;
     }
-
     .header-banner{
-        width: 320px;
+        width: 90%;
         margin: 50px auto;
-        /* margin-bottom: 50px; */
-    }
-    
+    }    
     .header-title h2{
         font-weight: 600;
         font-size: 25px;
@@ -248,24 +313,24 @@ article{
     .image{
         width: 100%;
     }
-
     .container{
         flex-direction: column;
-        margin: 0;
+        margin: 30px;
     }
     .left-align{
-        padding: 15px;
-        margin-right: 0;
+        grid-row-gap: 10px;        
+        width: 100%;
+    }
+    .left-align div{
+        text-align: center;
     }
     .left-align img{
         width: 162px;
     }
-
     .right-align{
         padding: 10px;
         margin-top: 25px;
     }
-
     .title h4{
         text-align: center;
     }
@@ -273,7 +338,6 @@ article{
         text-align: justify;
         padding: 0 7px;
     }
-
     .title h4 .span1{        
         font-size: 35px;
     }
@@ -292,7 +356,6 @@ article{
     .features{
     margin: 30px 10px;
     flex-direction: column;
-    /* gap: 20px; */
     } 
     .features-title{
         font-weight: 400;
@@ -310,13 +373,34 @@ article{
         text-align: center;
         margin-bottom: 50px;
     }
+    .sponsores{
+        margin: 70px auto;
+        padding: 10px;
+    }
     .card-container{
         flex-direction: column;
     }
     .card{
-        margin: 15px auto;
-        width: 70%;
+        margin: 25px auto;
+        width: 50%;
     }
+    .logo-container{
+        flex-direction: column;
+    }
+    .logo-container div{
+        margin: 15px 0;
+    }
+    .my-strength{
+        margin: 0;
+    }
+    .my-strength-container{
+        flex-direction: column;
+    }
+    .my-strengths{
+        width: 80%;
+        margin: 30px auto;
+    }
+}
 /* for tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .image{
@@ -332,31 +416,24 @@ article{
         flex-direction: column;
         margin: 0;
     }
-
     .left-align img{
         width: 262px;
     }
-
     .left-align{
         margin-left: 100px;
         margin-top: 50px;
     }
-
     .sub-title p{
         padding: 0 20px;
     }
-
     .title{
         text-align: center;
     }
-
     .section-btn{
         text-align: center;
     }
     .features{
-        /* margin: 30px 10px; */
         flex-direction: column;
-        /* gap: 20px; */
     } 
     .left-alignment{
         width: 100%
