@@ -315,14 +315,14 @@ article{
     }
     .container{
         flex-direction: column;
-        margin: 30px;
+        margin: 30px 0;
     }
     .left-align{
         grid-row-gap: 10px;        
         width: 100%;
     }
     .left-align div{
-        text-align: center;
+        text-align: left;
     }
     .left-align img{
         width: 162px;
