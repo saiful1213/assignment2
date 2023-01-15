@@ -171,6 +171,44 @@ article{
     font-size: 17px;
 }
 
+/* 3rd section added  */
+    .facts{
+        margin: 20px 100px;
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        text-align: center;
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        padding: 20px;
+        transition: transform 2s ease .5s;
+    }
+    .card:hover{
+        transform: rotate(-90deg);
+    }
+    .facts-title{
+        color: #131313;
+        font-weight: 700;
+        font-size: 45px;
+        margin-bottom: 24px;
+    }
+    .facts-sub-title{
+        color: #727272;
+        margin-bottom: 100px;
+    }
+    .card-number{
+        color: #424242;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    .card-info{
+        color: #727272;
+        font-weight: 600;
+        font-size: 20px;
+    }
 
 
 /* media queries starts */
@@ -262,7 +300,23 @@ article{
     .right-alignment{
         width: 100%;
     }
-}
+    .facts{
+        margin: 20px 15px;
+    }
+    .facts-title{
+        text-align: center;
+    }
+    .facts-sub-title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        margin: 15px auto;
+        width: 70%;
+    }
 /* for tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .image{
@@ -320,6 +374,5 @@ article{
     }
     .right-alignment{
         width: 100%;
-
     }
 }
