@@ -12,10 +12,13 @@
     font-size: 20px;
     color: #ffffff;
     border-radius: 8px;
+    border: 0;
 }
 /* work sans google fonts  */
 body{
     font-family: 'Work Sans', sans-serif;
+    max-width: 1200px;
+    border: 2px solid;
     margin: 0 auto;
 }
 /* header part style here */
@@ -73,7 +76,7 @@ nav a{
 .container{
     display: flex;
     justify-content: center;
-    margin: 100px 240px;
+    margin: 100px 200px;
 }
 .left-align{
     display: grid;
@@ -88,7 +91,7 @@ nav a{
 
 .right-align{
     /* width: 40%; */
-    padding: 70px;
+    padding: 60px 0;
     padding-left: 0;
 }
 .title h4{
@@ -113,7 +116,62 @@ nav a{
 .sub-title{
     color: #727272;
     margin-bottom: 32px;
+    text-align: justify;
 }
+/* 2nd section start  */
+.features{
+    margin: 50px 100px;
+    display: flex;
+    gap: 20px;
+}
+.left-alignment{
+    width: 50%;
+}
+.features-title{
+    border-left: 3px solid #FF900E;
+    padding-left: 20px;
+    color: #131313;
+    font-weight: 700;
+    font-size: 40px;
+    /* line-height: 53px; */
+    /* margin-left: 20px; */
+}
+.features-sub-title{
+    color: #727272;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+article{
+    padding: 30px;
+    /* margin-top: 15px; */
+}
+.article-title{
+    color: #131313;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.article-sub-title{
+    color: #727272;
+}
+.right-alignment{
+    width: 50%;
+}
+.right-alignment img{
+   width: 100%;
+}
+.features-btn{
+    position: relative; 
+    bottom: 80px;  
+    left: 0px; 
+    font-size: 35px;
+}
+.features-btn span{    
+    font-size: 17px;
+}
+
+
 
 /* media queries starts */
 /* for mobile  */
@@ -190,6 +248,20 @@ nav a{
     .section-btn{
         text-align: center;
     }
+    .left-alignment{
+        width: 100%;
+    }
+    .features{
+    margin: 30px 10px;
+    flex-direction: column;
+    /* gap: 20px; */
+    } 
+    .features-title{
+        font-weight: 400;
+    }
+    .right-alignment{
+        width: 100%;
+    }
 }
 /* for tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -218,5 +290,36 @@ nav a{
 
     .sub-title p{
         padding: 0 20px;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .section-btn{
+        text-align: center;
+    }
+    .features{
+        /* margin: 30px 10px; */
+        flex-direction: column;
+        /* gap: 20px; */
+    } 
+    .left-alignment{
+        width: 100%
+    }
+    .features-title{
+        text-align: center;
+        border-left: 0;
+    }
+    .features-sub-title{
+        text-align: center;
+    }
+    .article-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .right-alignment{
+        width: 100%;
+
     }
 }
